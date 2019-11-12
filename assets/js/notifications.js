@@ -1,12 +1,13 @@
 const notifications = document.getElementById("jsNotifications");
 
 const CONNECT_COLOR = "rgb(0, 122, 255)";
-const DISCONNECT_COLOR = "rgb(255, 59, 48)";
+const DISCONNECT_COLOR = "rgb(255, 149, 0)";
 
 const fireNotification = (text, color) => {
   const notification = document.createElement("div");
   notification.innerText = text;
   notification.style.backgroundColor = color;
+  notification.className = "notification";
   notifications.appendChild(notification);
 };
 
